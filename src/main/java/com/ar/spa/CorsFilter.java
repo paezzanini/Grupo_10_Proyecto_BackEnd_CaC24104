@@ -28,7 +28,7 @@ public class CorsFilter implements Filter {
                 
                 if("OPTIONS".equalsIgnoreCase(httpRequest.getMethod())){
                     httpResponse.setStatus(HttpServletResponse.SC_OK); //200(ok)  
-
+                    return;
                 }
 
                 chain.doFilter(request, response);

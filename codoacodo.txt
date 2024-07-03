@@ -1,0 +1,50 @@
+INSERT INTO usuarios(nombre,apellido,email,pass,fecha_nac,pais) VALUES ('fer','nando','fer@nando.com','1234','80-05-01','Argentina');
+
+https://dev.mysql.com/downloads/connector/j/
+8.4
+
+
+https://www.oracle.com/ar/java/technologies/downloads/#jdk17-windows
+
+Downloading Apache Maven 3.9.8
+https://maven.apache.org/download.cgi
+
+
+Extension Visual Studio COde
+Extension Pack for Java
+Community server connectors
+
+variables de sistema
+JAVA_HOME
+MAVEN_HOME
+
+
+new java proeyct 
+mave webapp
+ve1.4
+com.ar.spa
+webapp
+snapshot
+y
+open
+
+cambiar vesion 1.7 a 17
+dependencia dentro de POM.xml
+https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.31
+
+dependecia jackson
+drive
+
+servers
+download
+new server apache tomcat 10.1.4
+
+
+maven
+
+lifecylce
+install - > run
+
+servers
+add deployemetn - file
+webapp.war

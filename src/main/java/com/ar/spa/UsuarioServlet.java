@@ -26,6 +26,7 @@ public class UsuarioServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
 
+        // Procesar la solicitud POST
         Usuario usuario = objectMapper.readValue(req.getInputStream(), Usuario.class);
         Integer id = usuarioDAO.insertUsuario(usuario);
         String jsonResponse = objectMapper.writeValueAsString(id);
@@ -45,6 +46,8 @@ public class UsuarioServlet extends HttpServlet {
 
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
+
+         // Procesar la solicitud GET
 
         try {
             List<Usuario> usuarios = usuarioDAO.getAllUsuarios();
