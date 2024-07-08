@@ -1,0 +1,124 @@
+.contenedorDetalle {
+    background-image: url(../assets/banner0.jpg);
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.servicioDetalle {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: center;
+    column-gap: 10px;
+}
+
+.imgDetalle {
+    margin-top: 100px;
+}
+
+.imgDetalle img {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.textoDetalle {
+    padding: 30px;
+    margin: 120px 0;
+    border-radius: 15px;
+    text-align: start;
+    color: #1392c9;
+    background-color: rgba(255, 255, 255, 0.553);
+}
+
+.textoDetalle h4 {
+    color: black;
+}
+
+.profesionalesDetalle {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textoProfe , p{
+    h2, p{
+    color: black;
+    }
+}
+
+.redesSociales {
+  display: grid;
+  grid-template-columns: 50% auto ;
+
+} 
+
+.videoRelajacion {
+    margin: 10PX;
+}
+
+.redesDetalle {
+    
+    padding: 20px;
+    align-items: center;
+    ul{
+        
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1127px){
+    .video{
+        width: 560px !important;
+        height: 315px !important;
+    }
+}
+
+
+@media screen and (max-width:769px){
+
+    .contenedorDetalle{
+        display: flex;
+        flex-direction: column;
+    }
+    .servicioDetalle {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        column-gap: 10px;
+    }
+
+    .imgDetalle img {
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .profesionalesDetalle {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+    }
+
+    .textoDetalle{
+        margin-top: 30px;
+    }
+
+    .redesSociales{
+        grid-template-columns: auto ;
+        
+    }
+    
+}
+
