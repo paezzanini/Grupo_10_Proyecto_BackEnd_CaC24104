@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #97C4D7;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    background-color: #D6F3F8;
+    padding-bottom: 50px;
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: center;
+    transition: all 700ms;
+}
+
+section > img{
+    width: 90%;
+}
+
+section p{
+    text-align:center;
+    transition: all 700ms;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.imagenLanding{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.cont-img {
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+.cont-img > img{
+    width:100%;
+}
+
+.cont-img::before {
+    content: "";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(255,255,255,0) 20%, #D6F3F8 80%);
+}
+
+.cont-boton{
+    margin:auto;
+}
+
+button {
+    background-color: #7195AF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width:760px){
+    .cont-boton{
+        width: 100%;
+    }
+    button {
+        width: 40%;
+    }
+
+    main{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    section{
+        width: 45%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    section:hover{
+        transform: scale(110%);
+    }
+
+
+    h2{
+        flex:10%;
+        width: 100%;
+    }
+
+    p{
+        width: 80%;
+        height: 100%;
+        flex:35%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .cont-img {
+        height: 100%;
+        width: 200px;
+        flex: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-img > img{
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        width: 30%;
+        transition: all 1000ms
+    }
+
+    section > p {
+        display: none;
+        opacity: 0%;
+        transition: all 2000ms;
+
+    }
+
+    section:hover > p{
+        display: flex;
+        opacity: 100%;
+    }
+
+}
