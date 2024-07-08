@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa y Tratamientos Relajantes</title>
+    <link rel="stylesheet" href="../../styles/stylesLanding.css">
 </head>
+
 <body>
-    <h1>Registrar Usuario</h1>
-    <form id="usuarioForm">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="pass">Contraseña:</label>
-        <input type="password" id="pass" name="pass" required><br><br>
-        <label for="fecha_nac">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha_nac" name="fecha_nac" required><br><br>
-        <label for="pais">País:</label>
-        <input type="text" id="pais" name="pais" required><br><br>
-        <button type="submit">Registrar</button>
-    </form>
-    <script src="../scripts/script.js"></script>
+    <header>
+        <h1>Spa y Tratamientos Relajantes</h1>
+    </header>
+    <main>
+        <section class="mision">
+            <div class="cont-img">
+                <img src="../../assets/landing3.png" alt="imagen de nuestra mision">
+            </div>
+            <h2>Nuestra Misión</h2>
+            <p>En nuestra empresa, nos dedicamos a proporcionar tratamientos de spa y médicos de la más alta calidad
+                para mejorar la salud y el bienestar de nuestros clientes.</p>
+        </section>
+        <section class="quienes-somos">
+            <div class="cont-img">
+                <img src="../../assets/landing1.png" alt="imagen quienes somos">
+            </div>
+            <h2>Quiénes Somos</h2>
+            <p>Somos un equipo de profesionales apasionados por el cuidado de la salud y la belleza. Con años de
+                experiencia en la industria, nos esforzamos por brindar un servicio excepcional a cada cliente.</p>
+        </section>
+        <section class="que-ofrecemos">
+            <div class="cont-img">
+                <img src="../../assets/landing2.png" alt="imagen de lo que ofrecemos">
+            </div>
+            <h2>Qué Ofrecemos</h2>
+            <p>Ofrecemos una amplia gama de tratamientos, que incluyen masajes terapéuticos, tratamientos faciales,
+                consultas médicas y mucho más. Todos nuestros servicios están diseñados para promover el bienestar
+                integral de nuestros clientes.</p>
+        </section>
+
+        <section>
+            <img class="imagenLanding" src="../../assets/masajesLanding.png" alt="masajes">
+            <div class="cont-boton">
+                <a href="./inicio.html"> <button>Visitanos</button></a>
+            </div>
+        </section>
+
+    </main>
+
 </body>
+
 </html>

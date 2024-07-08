@@ -10,7 +10,7 @@ h3 {
 }
 
 body{
-    background-image: url("../../assets/background-sesion-2.jpg");
+    background-image: url("../assets/background-sesion-2.jpg");
     background-repeat: repeat;
     background-size: 50%;
 }
@@ -55,6 +55,13 @@ body{
                 border: 2px solid white;
                 padding-left: 0.5rem;
             }
+
+
+            button:hover{
+                cursor:pointer;
+                background-color: #97C4D7;
+            }
+
 
             .registrar {
                 width: 10rem;
