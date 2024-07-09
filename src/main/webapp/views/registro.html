@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/stylesHeaderFooter.css">
-    <link rel="stylesheet" href="../../styles/styleRegistro.css">
+    <link rel="stylesheet" href="../../webapp/styles/styles.css">
+    <link rel="stylesheet" href="../../webapp/styles/stylesHeaderFooter.css">
+    <link rel="stylesheet" href="../../webapp/styles/styleRegistro.css">
 
 <body>
     <header>
@@ -32,7 +32,7 @@
 
         <div class="container">
             <h3>Registro</h3>
-            <form id="usuarioForm">
+            <form id="usuarioForm" onsubmit="return enviar(event)">
                 <input type="text" placeholder="Nombre" id="nombre" name="nombre">
                 <span id="errorNombre" class="mensajeError"></span>
                 <input type="text" placeholder="Apellido" id="apellido" name="apellido">
@@ -50,8 +50,8 @@
                     <label class="textoCheck" for="check">Acepto términos y condiciones</label>
                 </div>
                 <span id="errorCheck" class="mensajeError"></span>
-                <button class="registrar" type="submit">Registrar</button>
-                <!-- <input class="registrar" type="button" onclick='return enviar()' value="Registrarse"> -->
+                <button class="registrar" type="submit">Registrarse</button> 
+                <!-- <input class="registrar" type="button" onclick='return enviar()' value="Registrarse">-->
 
             </form>
 
@@ -60,8 +60,8 @@
 
     </main>
 
-    <script src="../scripts/script.js"></script>
-    <script src="../../Js/registro.js"></script>
+    <script src="../../webapp/Js/post_registro.js"></script>
+    <script src="../../webapp/Js/registro.js"></script>
 
 </body>
 
