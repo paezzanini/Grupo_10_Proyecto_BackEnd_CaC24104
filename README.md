@@ -1,7 +1,18 @@
-Grupo 10 Proyecto BackEnd CaC Comision 24104
+Nombre del Proyecto: Spa y Tratamientos Relajantes
 
-Utiliza:
+Grupo 10 - Integrantes
 
-JDK Development Kit 17.0.11 
-Apache Maven 3.9.8
-Apache-Tomcat9.0.41
+    Diego Nicolás Arjona
+    Rodrigo Emmanuel Arjona
+    Gonzalo Benzi
+    Cesia Esperanza Marambio Jofré
+    Fernando Paez Zanini
+    Lautaro Garibaldi
+
+Utiliza 
+
+    JDK Development Kit 17.0.11
+    Apache Maven 3.9.8 Apache
+    Tomcat9.0.41
+
+
