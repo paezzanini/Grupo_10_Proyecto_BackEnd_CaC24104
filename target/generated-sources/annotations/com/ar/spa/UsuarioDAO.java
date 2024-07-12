@@ -1,8 +1,10 @@
 package com.ar.spa;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 //import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,8 +59,10 @@ public class UsuarioDAO {
                 String apellido = rs.getString("apellido");
                 String email = rs.getString("email");
                 String pass = rs.getString("pass");
-                String fecha_nac = rs.getString("fecha_nac");
+                Date fecha_Nac_Date = rs.getDate("fecha_nac");
+               // String fecha_nac = rs.getString("fecha_nac");
                 String pais = rs.getString("pais");
+                String fecha_nac = new SimpleDateFormat("yyyy-MM-dd").format(fecha_Nac_Date);
 
                 Usuario usuario = new Usuario(id_usuarios, nombre, apellido, email, pass, fecha_nac, pais);
                 usuarios.add(usuario);

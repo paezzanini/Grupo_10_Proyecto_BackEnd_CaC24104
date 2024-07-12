@@ -60,8 +60,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const tdPass = document.createElement('td');
         tdPass.textContent = usuario.pass;
          // creamos un td con la fecha de nacimmiento
+        
         const tdFechaNac = document.createElement('td');
-        tdFechaNac.textContent = usuario.fechaNac;
+        tdFechaNac.textContent = usuario.fecha_nac;
         // creamos un td con el país del usuario
         const tdPais = document.createElement('td');
         tdPais.textContent = usuario.pais;
